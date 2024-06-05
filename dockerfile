@@ -10,9 +10,12 @@ RUN mkdir /notebooks
 WORKDIR /notebooks
 
 # Don't change anything above this line, as it will make
-# adding additional packages take a long time.
+# adding additional packages take a long time for Docker to
+# rebuild the container.
 
 # To add a new package, uncomment out the following line
 # and replace "package-name" with the name of the package
-# in question:
-# conda install -y package-name
+# in question. You can copy and paste that line to install
+# as many other packages as you need:
+
+# RUN conda install -y package-name
