@@ -5,7 +5,7 @@ RUN conda config --append channels conda-forge
 RUN conda install -y nltk scikit-learn fasttext sentence-transformers transformers PyTorch Gensim SpaCy Stanza BeautifulSoup4 Selenium pytesseract pdf2image pillow TextStat LexicalRichness NetworkX
 
 # Setup jupyter notebooks
-RUN conda install -y jupyterlab
+RUN conda install -y jupyterlab jupyter-resource-usage
 RUN mkdir /notebooks
 WORKDIR /notebooks
 

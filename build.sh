@@ -1,1 +1,1 @@
-docker build -t bptarpley/dhsi2024 .
+docker build --platform=linux/amd64 -t bptarpley/dhsi2024 .
